@@ -18,7 +18,7 @@ public class EmailUtil {
     @Autowired
     private Environment env;
 
-    public SimpleMailMessage composeEmail(String subject, String messageText, XUser user) {
+    public SimpleMailMessage composeEmail(final String subject, final String messageText, final XUser user) {
 
         final SimpleMailMessage message = new SimpleMailMessage();
         message.setSubject(subject);
